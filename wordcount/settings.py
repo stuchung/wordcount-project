@@ -76,11 +76,11 @@ WSGI_APPLICATION = 'wordcount.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'wordcount',
-        'USER':'postgres',
-        'PASSWORD':'admin_1234',
-        'HOST':'localhost',
-        'Port':'5432',
+        'NAME': '',
+        'USER':'',
+        'PASSWORD':'',
+        'HOST':'',
+        'Port':'',
     }
 }
 
