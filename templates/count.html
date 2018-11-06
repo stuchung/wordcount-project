@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WordCount</title>
+  </head>
+  <body>
+    <h1>This is the WordCount Website</h1>
+    <h2>This is the Count page</h2>
+    <p><h2>There are {{count}} words in your entry.</h2></p>
+    <br>
+    <h2>Your original Text:</h2>
+    <p><h1><strong><em>{{ fulltext }}</em></strong></h1></p>
+    <br><br><br>
+    <h2>The word dictionary:</h2>
+    {% for word, countotal in sortedwords %}
+
+    {{ word }} - {{ countotal }}
+    <br>
+
+    {% endfor %}
+
+    <br><br><br>
+    <div>
+      <a href="{% url 'home' %}">Start Again</a>
+    </div>
+    <br><br>
+    <div>
+      <a href="{% url 'about' %}">About</a>
+    </div>
+  </body>
+</html>
